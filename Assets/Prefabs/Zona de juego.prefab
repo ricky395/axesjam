@@ -411,7 +411,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 5678
+  m_VersionIndex: 5690
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -1274,7 +1274,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 2011
+  m_VersionIndex: 2023
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -1414,6 +1414,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 668961032860955109}
     m_Modifications:
+    - target: {fileID: 6358830886784840777, guid: def7cff30858f284285ac9b184058837, type: 3}
+      propertyPath: tapLayer
+      value: Suelo
+      objectReference: {fileID: 0}
     - target: {fileID: 6358830886784840777, guid: def7cff30858f284285ac9b184058837, type: 3}
       propertyPath: moveForce
       value: 2
