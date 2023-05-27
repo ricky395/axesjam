@@ -50,7 +50,7 @@ public class LifeController : MonoBehaviour
             fillVal = value / totalTime;
 
             fgFeedback.color = goodFeedback;
-            fgFeedback.fillAmount = fgReal.fillAmount + fillVal;
+            fgFeedback.fillAmount = fgReal.fillAmount;
 
             time += fgFeedback.fillAmount;
         }
