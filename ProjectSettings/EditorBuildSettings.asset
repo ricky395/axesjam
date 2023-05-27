@@ -4,5 +4,41 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Inicio.unity
+    guid: 60db3e2ceeca1654492397eb848716aa
+  - enabled: 1
+    path: Assets/Scenes/Start.unity
+    guid: 619be68c4763b4b3faea2c87f30f45f4
+  - enabled: 1
+    path: Assets/Scenes/Mapa 1.unity
+    guid: 23b2e017d3d006c4cb20afb84f4ddcf9
+  - enabled: 1
+    path: Assets/Scenes/Mapa 2.unity
+    guid: fd388e8f754af564d88e1b029c67f206
+  - enabled: 1
+    path: Assets/Scenes/Mapa 3.unity
+    guid: 3850a8efa9b722a4d87186d95e6ea3fc
+  - enabled: 1
+    path: Assets/Scenes/Mapa 4.unity
+    guid: d185ca5555c5b464fa7b0a34838d0d99
+  - enabled: 1
+    path: Assets/Scenes/Mapa 5.unity
+    guid: a033ccfd9d6647346b37ea43c5ba47b8
+  - enabled: 1
+    path: Assets/Scenes/Mapa 6.unity
+    guid: 28933f6bf42186c4d9f9f111afe61925
+  - enabled: 1
+    path: Assets/Scenes/Mapa 7.unity
+    guid: 5546a760b4417ed49a12864de53e54da
+  - enabled: 1
+    path: Assets/Scenes/Mapa 8.unity
+    guid: 43d9d4ad77b01e047808d6507f51f042
+  - enabled: 1
+    path: Assets/Scenes/Final-Defeat.unity
+    guid: db0877591d57e450db4190f53cc623ec
+  - enabled: 1
+    path: Assets/Scenes/Final-Win.unity
+    guid: 4da3354bc8fca44c5995f8e703fc9f84
   m_configObjects: {}
