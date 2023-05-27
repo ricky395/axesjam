@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class DragMovement : MonoBehaviour
@@ -18,10 +19,23 @@ public class DragMovement : MonoBehaviour
     private bool isHoldingTap = false;
 
     private Rigidbody rb;
+    private WaitForSeconds wait;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+
+        wait = new WaitForSeconds(0.5f);
+        StartCoroutine(WakeRB());
+    }
+
+    private IEnumerator WakeRB()
+    {
+        for (; ; )
+        {
+            yield return wait;
+            rb.WakeUp();
+        }
     }
 
     private void Update()
@@ -39,15 +53,14 @@ public class DragMovement : MonoBehaviour
         {
             GetHitPoint(ref releasePoint);
 
-            //Vector3 rayPoint = new Vector3(releasePoint.x, releasePoint.y + 0.5f, releasePoint.z);
-            //Vector3 normVector = (rayPoint - tapPoint).normalized;
-            //Vector3 newRayPoint = normVector * maxDragDistance;
-            //newRayPoint = new Vector3(newRayPoint.x, releasePoint.y + 0.5f, newRayPoint.z);
+            //Vector3 newTapPoint = new Vector3(tapPoint.x, tapPoint.y + 0.5f, tapPoint.z);
+            //Vector3 newReleasePoint = new Vector3(releasePoint.x, releasePoint.y + 0.5f, releasePoint.z);
+            //Vector3 normVector = (newReleasePoint - newTapPoint).normalized * maxDragDistance;
+            //Debug.DrawRay(newReleasePoint, newTapPoint);
 
-            Vector3 rayPoint = new Vector3(releasePoint.x, releasePoint.y + 0.5f, releasePoint.z);
-            Debug.DrawRay(tapPoint, rayPoint * maxDragDistance);
-            Vector3 normVector = (rayPoint - tapPoint).normalized * maxDragDistance;
-            helperLine.SetPosition(1, normVector);
+            //Vector3 newRelPoint = new Vector3(releasePoint.x, releasePoint.y + 0.5f, releasePoint.z);
+            //Vector3 newVector = releasePoint - tapPoint;
+            helperLine.SetPosition(1, new Vector3(releasePoint.x, releasePoint.y + 0.5f, releasePoint.z));
         }
     }
 
