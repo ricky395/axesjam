@@ -40,7 +40,9 @@ public class DragMovement : MonoBehaviour
             GetHitPoint(ref releasePoint);
 
             Vector3 rayPoint = new Vector3(releasePoint.x, releasePoint.y + 0.5f, releasePoint.z);
-            helperLine.SetPosition(1, rayPoint);
+            Vector3 normVector = (rayPoint - tapPoint).normalized;
+            Vector3 newRayPoint = normVector * maxDragDistance;
+            helperLine.SetPosition(1, newRayPoint);
         }
     }
 
