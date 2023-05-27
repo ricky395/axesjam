@@ -71,7 +71,7 @@ LineRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 238764181}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -411,7 +411,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 5690
+  m_VersionIndex: 5693
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -1274,7 +1274,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 2023
+  m_VersionIndex: 2026
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -1414,6 +1414,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 668961032860955109}
     m_Modifications:
+    - target: {fileID: 4733124886455334095, guid: def7cff30858f284285ac9b184058837, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4733124886455334095, guid: def7cff30858f284285ac9b184058837, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.97629607
+      objectReference: {fileID: 0}
+    - target: {fileID: 4733124886455334095, guid: def7cff30858f284285ac9b184058837, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.2164396
+      objectReference: {fileID: 0}
+    - target: {fileID: 4733124886455334095, guid: def7cff30858f284285ac9b184058837, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6358830886784840776, guid: def7cff30858f284285ac9b184058837, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6358830886784840777, guid: def7cff30858f284285ac9b184058837, type: 3}
       propertyPath: tapLayer
       value: Suelo
@@ -1422,6 +1442,10 @@ PrefabInstance:
       propertyPath: moveForce
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6358830886784840777, guid: def7cff30858f284285ac9b184058837, type: 3}
+      propertyPath: helperLine
+      value: 
+      objectReference: {fileID: 238764183}
     - target: {fileID: 6358830886784840777, guid: def7cff30858f284285ac9b184058837, type: 3}
       propertyPath: maxDragDistance
       value: 3
