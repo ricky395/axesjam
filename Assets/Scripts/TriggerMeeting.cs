@@ -1,6 +1,7 @@
 using UnityEngine;
+using DG.Tweening;
 
-public class TriggerBooster : MonoBehaviour
+public class TriggerMeeting : MonoBehaviour
 {
     [SerializeField]
     private float valueAddOrDecrease;
@@ -26,6 +27,8 @@ public class TriggerBooster : MonoBehaviour
 
             Destroy(GetComponentInChildren<SpriteRenderer>());
             Destroy(GetComponent<BoxCollider>());
+
+            Camera.main.DOShakePosition(0.3f, 1, 3, 30);
         }
     }
 }

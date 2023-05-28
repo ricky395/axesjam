@@ -5,7 +5,6 @@ public class LifeController : MonoBehaviour
 {
     [SerializeField]
     public float totalTime;
-    private float time;
 
     [SerializeField]
     private Image bg;
@@ -20,6 +19,9 @@ public class LifeController : MonoBehaviour
     private Color badFeedback;
 
     public static LifeController instance;
+
+    private float time;
+    private bool alreadyLost = false;
 
     private void Awake()
     {
@@ -38,8 +40,9 @@ public class LifeController : MonoBehaviour
     {
         time -= Time.deltaTime * 0.3f;
 
-        if (time <= 0)
+        if (time <= 0 && alreadyLost)
         {
+            alreadyLost = true;
             SceneLoader.instance.LoadScene(3, true, 0.6f);
         }
 
@@ -68,5 +71,10 @@ public class LifeController : MonoBehaviour
 
             time += fillVal;
         }
+    }
+
+    private void OnLevelWasLoaded(int level)
+    {
+        alreadyLost = false;
     }
 }
