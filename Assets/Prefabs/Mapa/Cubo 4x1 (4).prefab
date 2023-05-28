@@ -210,6 +210,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   valueAddOrDecrease: -0.25
   clipOnTrigger: {fileID: 0}
+  effectPrefab: {fileID: 2433282508537954060, guid: 3ef3ae421f71c5c4e97fe12dc2fc6312, type: 3}
 --- !u!1 &4115306995562106258
 GameObject:
   m_ObjectHideFlags: 0
