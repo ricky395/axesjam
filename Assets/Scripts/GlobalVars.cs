@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class GlobalVars : MonoBehaviour
 {
-    public static int level = 2;
+    public static int level = 4;
 }

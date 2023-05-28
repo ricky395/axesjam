@@ -6,6 +6,6 @@ public class AutoChangeScene : MonoBehaviour
 {
     void Start()
     {
-        SceneLoader.LoadScene(1);
+        SceneLoader.instance.LoadScene(1);
     }
 }
