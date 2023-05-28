@@ -5,8 +5,11 @@ using UnityEngine;
 public class GlobalVars : MonoBehaviour
 {
     public bool debugLevel = false;
-    [Range(4, 10)]
-    public int debugFirstLevel = 4; 
+    [Range(4, 8)]
+    public int debugFirstLevel = 4;
+
+    public static bool hasWon = false;
+    public static bool hasLost = false;
 
     private static int firstLevel = 4;
     public static int level = 4;
@@ -20,5 +23,11 @@ public class GlobalVars : MonoBehaviour
     public static void ResetProgress()
     {
         level = firstLevel;
+    }
+
+    private void OnLevelWasLoaded(int level)
+    {
+        hasWon = false;
+        hasLost = false;
     }
 }

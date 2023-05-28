@@ -18,6 +18,11 @@ public class LifeController : MonoBehaviour
     [SerializeField]
     private Color badFeedback;
 
+    [SerializeField]
+    private GameObject addSprite;
+    [SerializeField]
+    private GameObject substractSprite;
+
     public static LifeController instance;
 
     private float time;
@@ -40,9 +45,10 @@ public class LifeController : MonoBehaviour
     {
         time -= Time.deltaTime * 0.3f;
 
-        if (time <= 0 && !alreadyLost)
+        if (time <= 0 && !alreadyLost && !GlobalVars.hasWon)
         {
             alreadyLost = true;
+            GlobalVars.hasLost = true;
             SceneLoader.instance.LoadScene(3, true, 0.6f);
         }
 
@@ -61,6 +67,8 @@ public class LifeController : MonoBehaviour
             fgFeedback.fillAmount = fgReal.fillAmount;
 
             time += fgFeedback.fillAmount;
+
+            addSprite.SetActive(true);
         }
         else if (value < 0)
         {
@@ -70,6 +78,8 @@ public class LifeController : MonoBehaviour
             fgFeedback.fillAmount = fgReal.fillAmount;
 
             time += fillVal;
+
+            substractSprite.SetActive(false);
         }
     }
 
