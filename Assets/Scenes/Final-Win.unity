@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44402242, g: 0.49316543, b: 0.5722324, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6844,6 +6844,7 @@ GameObject:
   - component: {fileID: 1462725420}
   - component: {fileID: 1462725422}
   - component: {fileID: 1462725421}
+  - component: {fileID: 1462725423}
   m_Layer: 5
   m_Name: spReward
   m_TagString: Untagged
@@ -6909,6 +6910,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1462725419}
   m_CullTransparentMesh: 1
+--- !u!114 &1462725423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462725419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cbdbf9c31852004f8131521763aeeaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 20
+  maxValue: 100
+  animCurve: 7
 --- !u!1 &1503379990
 GameObject:
   m_ObjectHideFlags: 0
@@ -7324,6 +7340,7 @@ GameObject:
   - component: {fileID: 1849581070}
   - component: {fileID: 1849581072}
   - component: {fileID: 1849581071}
+  - component: {fileID: 1849581073}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -7389,6 +7406,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1849581069}
   m_CullTransparentMesh: 1
+--- !u!114 &1849581073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849581069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6fec705bc77d7a4dadde6dc1964d889, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  reverse: 0
 --- !u!1 &1887346992
 GameObject:
   m_ObjectHideFlags: 0
@@ -7512,7 +7543,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d4e96d043ab4f1043b2da2c8ff505406, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0

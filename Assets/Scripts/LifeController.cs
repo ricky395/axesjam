@@ -68,7 +68,7 @@ public class LifeController : MonoBehaviour
 
             time += fgFeedback.fillAmount;
 
-            addSprite.SetActive(true);
+            //addSprite.SetActive(true);
         }
         else if (value < 0)
         {
@@ -79,7 +79,7 @@ public class LifeController : MonoBehaviour
 
             time += fillVal;
 
-            substractSprite.SetActive(false);
+            //substractSprite.SetActive(false);
         }
     }
 

@@ -631,5 +631,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3da5078ea5f6cec49a03688dee0f9fb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debugLevel: 1
-  debugFirstLevel: 6
+  debugLevel: 0
+  debugFirstLevel: 4

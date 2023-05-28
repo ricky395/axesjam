@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4439403, g: 0.4931519, b: 0.5722083, a: 1}
+  m_IndirectSpecularColor: {r: 0.44402242, g: 0.49316543, b: 0.5722324, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2664,7 +2664,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 828736f4e00132a4cb8ffb459d8dcda6, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -3294,11 +3294,11 @@ Transform:
   - {fileID: 662913618}
   - {fileID: 89398313}
   - {fileID: 1980295619}
+  - {fileID: 4812965668074981639}
   - {fileID: 124640516}
   - {fileID: 1370385273}
   - {fileID: 843590912}
   - {fileID: 1393836045}
-  - {fileID: 4812965668074981639}
   - {fileID: 639504744}
   - {fileID: 1327862795}
   - {fileID: 1499929435}
@@ -6058,7 +6058,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1092875521}
-  m_RootOrder: 35
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 175.284, y: 0, z: -90}
 --- !u!33 &5163024256212248310
 MeshFilter:

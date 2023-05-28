@@ -363,5 +363,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valueAddOrDecrease: 1
-  clipOnTrigger: {fileID: 0}
+  clipOnTrigger: {fileID: 8300000, guid: d6a6e02e8789c0745b1cc0a8e3cc048b, type: 3}
   effectPrefab: {fileID: 5112403345868107898, guid: 6f34ef0d986e9db4199cf75805f79753, type: 3}

@@ -5,14 +5,14 @@ using UnityEngine;
 public class GlobalVars : MonoBehaviour
 {
     public bool debugLevel = false;
-    [Range(4, 8)]
-    public int debugFirstLevel = 4;
+    [Range(5, 9)]
+    public int debugFirstLevel = 5;
 
     public static bool hasWon = false;
     public static bool hasLost = false;
 
-    private static int firstLevel = 4;
-    public static int level = 4;
+    private static int firstLevel = 5;
+    public static int level = 5;
 
     private void Start()
     {

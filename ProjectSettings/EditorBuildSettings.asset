@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Final-Defeat.unity
     guid: db0877591d57e450db4190f53cc623ec
   - enabled: 1
+    path: Assets/Scenes/Intro_Level.unity
+    guid: c4557a60ed8044935a8f4ebe70378f8c
+  - enabled: 1
     path: Assets/Scenes/Mapa 1.unity
     guid: 23b2e017d3d006c4cb20afb84f4ddcf9
   - enabled: 1
