@@ -40,7 +40,7 @@ public class LifeController : MonoBehaviour
     {
         time -= Time.deltaTime * 0.3f;
 
-        if (time <= 0 && alreadyLost)
+        if (time <= 0 && !alreadyLost)
         {
             alreadyLost = true;
             SceneLoader.instance.LoadScene(3, true, 0.6f);
@@ -76,5 +76,7 @@ public class LifeController : MonoBehaviour
     private void OnLevelWasLoaded(int level)
     {
         alreadyLost = false;
+
+        time = FindObjectOfType<MapTime>().GetMapTime();
     }
 }
