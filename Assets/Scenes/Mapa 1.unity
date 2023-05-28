@@ -1522,7 +1522,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh68446
+  m_Name: pb_Mesh75348
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1735,7 +1735,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh68498
+  m_Name: pb_Mesh75400
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2930,7 +2930,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8082f0f3374ce3146b39b1a205df37a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 3
 --- !u!1001 &3855700580389297229
 PrefabInstance:
   m_ObjectHideFlags: 0
