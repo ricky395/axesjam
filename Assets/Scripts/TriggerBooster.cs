@@ -10,12 +10,22 @@ public class TriggerBooster : MonoBehaviour
 
     private AudioSource audioSource;
 
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
             LifeController.instance.ChangeLife(valueAddOrDecrease);
-            Destroy(this.gameObject);
+
+            if (clipOnTrigger != null)
+                audioSource.PlayOneShot(clipOnTrigger);
+
+            Destroy(GetComponentInChildren<SpriteRenderer>());
+            Destroy(GetComponentInChildren<BoxCollider>());
         }
     }
 }
