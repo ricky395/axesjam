@@ -478,8 +478,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Remember, your goal is to conquer all the levels in record time and achieve
-    the esteemed title of \"Master of Productivity.\" Are you up for the challenge?
-    \n\nGood luck, and may the coffee be with you!"
+    the esteemed title of \"Agile Master.\" Are you up for the challenge? \n\nGood
+    luck, and may the coffee be with you!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3348c74f50d99cc47bc5342d6499bfe3, type: 2}
   m_sharedMaterial: {fileID: -4353313219671393093, guid: 3348c74f50d99cc47bc5342d6499bfe3, type: 2}

@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 456052397936703850}
   m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 0.12, y: 0.570901, z: -0.1}
+  m_LocalPosition: {x: 0.12, y: 0.55, z: -0.1}
   m_LocalScale: {x: 0.12, y: 0.12, z: 0.12}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -176,7 +176,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7855202106980671484, guid: a11f66658ca0b2545ade682b34fbed7c, type: 3}
       propertyPath: m_Name
-      value: Cubo 1x1 1
+      value: Coffee 1x1
       objectReference: {fileID: 0}
     - target: {fileID: 7855202106980671485, guid: a11f66658ca0b2545ade682b34fbed7c, type: 3}
       propertyPath: m_RootOrder
@@ -254,20 +254,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7855202106980671484, guid: a11f66658ca0b2545ade682b34fbed7c, type: 3}
   m_PrefabInstance: {fileID: 7885536318999195259}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2726780573642221679
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 30475379275264391}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83f480c846cef6b4bb7b75fb8d7ee84b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  valueAddOrDecrease: 1
-  clipOnTrigger: {fileID: 0}
 --- !u!82 &3520593140160361149
 AudioSource:
   m_ObjectHideFlags: 0
@@ -364,3 +350,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2726780573642221679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30475379275264391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83f480c846cef6b4bb7b75fb8d7ee84b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  valueAddOrDecrease: 1
+  clipOnTrigger: {fileID: 0}
