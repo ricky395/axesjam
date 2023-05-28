@@ -45,4 +45,9 @@ public class SceneLoader : MonoBehaviour
     {
         fadePanel.DOFade(0, 0.2f);
     }
+
+    public int GetLevelsCount()
+    {
+        return SceneManager.sceneCountInBuildSettings;
+    }
 }
