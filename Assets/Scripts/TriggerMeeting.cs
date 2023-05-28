@@ -5,9 +5,10 @@ public class TriggerMeeting : MonoBehaviour
 {
     [SerializeField]
     private float valueAddOrDecrease;
-
     [SerializeField]
     private AudioClip clipOnTrigger;
+    [SerializeField]
+    private GameObject effectPrefab;
 
     private AudioSource audioSource;
 
@@ -25,6 +26,7 @@ public class TriggerMeeting : MonoBehaviour
             if (clipOnTrigger != null)
                 audioSource.PlayOneShot(clipOnTrigger);
 
+            Instantiate(effectPrefab, Vector3.zero, Quaternion.identity, transform.GetChild(0));
             Destroy(GetComponentInChildren<SpriteRenderer>());
             Destroy(GetComponent<BoxCollider>());
 
