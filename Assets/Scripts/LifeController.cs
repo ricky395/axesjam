@@ -38,6 +38,11 @@ public class LifeController : MonoBehaviour
     {
         time -= Time.deltaTime * 0.3f;
 
+        if (time <= 0)
+        {
+            SceneLoader.instance.LoadScene(3, true, 0.6f);
+        }
+
         float lerpVal = time / totalTime;
         fgReal.fillAmount = Mathf.Lerp(0, 1, lerpVal);
     }

@@ -6,6 +6,11 @@ public class LoadMap : MonoBehaviour
 {
     public void Load()
     {
-        SceneLoader.LoadScene(GlobalVars.level);
+        SceneLoader.instance.LoadScene(GlobalVars.level);
+    }
+
+    public void BackToMenu()
+    {
+        SceneLoader.instance.LoadScene(1);
     }
 }
