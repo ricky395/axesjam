@@ -26,7 +26,9 @@ public class TriggerMeeting : MonoBehaviour
             if (clipOnTrigger != null)
                 audioSource.PlayOneShot(clipOnTrigger);
 
-            Instantiate(effectPrefab, Vector3.zero, Quaternion.identity, transform.GetChild(0));
+            if (effectPrefab != null)
+                Instantiate(effectPrefab, Vector3.zero, Quaternion.identity, transform.GetChild(0));
+
             Destroy(GetComponentInChildren<SpriteRenderer>());
             Destroy(GetComponent<BoxCollider>());
 
